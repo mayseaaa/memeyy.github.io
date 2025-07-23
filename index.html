@@ -2,52 +2,229 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css" href="stylesheet" integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portofolio May Syesa - Siswi SMK Negeri 5 Malang jurusan PPLG (Pengembangan Perangkat Lunak dan Gim)" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css" integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <!-- My CSS -->
+    <style>
+      .jumbotron {
+        padding-top: 6rem;
+        background-color: #e2edff;
+      }
+      #projects {
+        background-color: #e2edff;
+      }
+      .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
 
-    <!-- my css -->
-    <link rel="stylesheet" href="style.css" />
-    <title>Portopolio Syesaaa</title>
+      .card-img-top.img-project {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .card-body {
+        flex-grow: 1;
+      }
+
+      section {
+        padding-top: 5rem;
+      }
+    </style>
+    <title>May Syesa | Portofolio PPLG</title>
   </head>
-  <body>
-    <!-- awal navbar -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-      <div class="container-fluid">
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div class="container">
         <a class="navbar-brand" href="#">May Syesa</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav" style="margin-left: 100px">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- akhir navbar -->
+    <!-- End Navbar -->
 
-    <!-- jumbotron -->
-    <section class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4" />
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <img src="img/mayphoto.jpg" alt="May Syesa" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">May Syesa</h1>
+      <p class="lead">Siswi SMK Negeri 5 Malang | Jurusan PPLG</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,192L26.7,170.7C53.3,149,107,107,160,80C213.3,53,267,43,320,69.3C373.3,96,427,160,480,197.3C533.3,235,587,245,640,229.3C693.3,213,747,171,800,176C853.3,181,907,235,960,261.3C1013.3,288,1067,288,1120,256C1173.3,224,1227,160,1280,122.7C1333.3,85,1387,75,1413,69.3L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
     </section>
-    <!-- akhir jumbotron -->
+    <!-- End Jumbotron -->
 
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4 mb-3">
+            <p>
+              Saya adalah siswi jurusan Pengembangan Perangkat Lunak dan Gim (PPLG) di SMK Negeri 5 Malang yang bersemangat dalam dunia pengembangan software. Saya memiliki ketertarikan dalam pembuatan aplikasi web dan mobile yang
+              bermanfaat.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <p>
+              Dengan dasar pengetahuan pemrograman yang kuat dan kreativitas dalam desain, saya berusaha menciptakan solusi teknologi yang inovatif. Terkadang saya mencari tantangan baru untuk mengasah kemampuan teknis dan problem solving
+              saya.
+            </p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,96L34.3,117.3C68.6,139,137,181,206,192C274.3,203,343,181,411,144C480,107,549,53,617,53.3C685.7,53,754,107,823,144C891.4,181,960,203,1029,202.7C1097.1,203,1166,181,1234,154.7C1302.9,128,1371,96,1406,80L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir About -->
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>My Projects</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="projects/card1.jpg" class="card-img-top img-project" alt="Sistem Inventaris Barang" />
+              <div class="card-body">
+                <h5>Sistem Inventaris Barang</h5>
+                <p class="card-text">Aplikasi manajemen inventaris untuk minimarket dengan fitur tracking stok, laporan penjualan, dan alert stok minimum. Dibangun dengan PHP dan MySQL.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="projects/card2.jpg" class="card-img-top img-project" alt="Aplikasi Marketplace" />
+              <div class="card-body">
+                <h5>Aplikasi Marketplace</h5>
+                <p class="card-text">Platform e-commerce dengan dua sisi (buyer & seller) termasuk manajemen produk, keranjang belanja, dan sistem rating. Menggunakan Laravel framework.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="projects/card3.jpg" class="card-img-top img-project" alt="Toko Online" />
+              <div class="card-body">
+                <h5>Toko Online</h5>
+                <p class="card-text">Solusi e-commerce lengkap untuk UMKM dengan desain responsif, manajemen produk, dan dashboard analitik. Dibuat dengan Vue.js dan Express.js.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="projects/card4.jpg" class="card-img-top img-project" alt="Aplikasi Food Delivery" />
+              <div class="card-body">
+                <h5>Food Delivery Online</h5>
+                <p class="card-text">Aplikasi pengiriman makanan dengan fitur perhitungan jarak, estimasi biaya kirim, dan tracking driver real-time menggunakan Google Maps API.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="projects/card5.jpg" class="card-img-top img-project" alt="Game Edukasi Keyboard" />
+              <div class="card-body">
+                <h5>Game Edukasi Keyboard</h5>
+                <p class="card-text">Game interaktif untuk melatih motorik anak dalam menghafal tata letak keyboard dengan sistem level progresif dan animasi menarik. Dibuat dengan Unity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,0L48,37.3C96,75,192,149,288,202.7C384,256,480,288,576,250.7C672,213,768,107,864,85.3C960,64,1056,128,1152,154.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir Projects -->
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,224L48,229.3C96,235,192,245,288,245.3C384,245,480,235,576,229.3C672,224,768,224,864,234.7C960,245,1056,267,1152,261.3C1248,256,1344,224,1392,208L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir contact -->
+
+    <!-- footer -->
+    <footer class="bg-primary text-white text-center pb-3">
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/maayesaraa?utm_source=qr" class="text-white fw-bold">maayesaraa</a></p>
+      <p class="mt-2">SMK Negeri 5 Malang - PPLG 2025</p>
+    </footer>
+    <!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
 </html>
