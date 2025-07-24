@@ -190,20 +190,20 @@
         </div>
         <div class="row mb-3 justify-content-center">
           <div class="col-md-6">
-            <form name="Contact">
+            <form name="submit-to-google-sheet">
               <div class="mb-3">
                 <label for="Nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="Nama" aria-describedby="Nama" name="Nama" />
+                <input type="text" class="form-control" id="Name" aria-describedby="name" name="Nama" />
               </div>
               <div class="mb-3">
                 <label for="Email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="Email" aria-describedby="Email" name="Email" />
+                <input type="email" class="form-control" id="Email" aria-describedby="email" name="Email" />
               </div>
               <div class="mb-3">
                 <label for="Pesan" class="form-label">Pesan</label>
-                <textarea type="text" class="form-control" id="Pesan" aria-describedby="Pesan" name="Pesan"></textarea>
+                <textarea class="form-control" id="Pesan" rows="3" name="Pesan"></textarea>
               </div>
-              <button type="submit" style="background-color: palevioletred; border: none; outline: none; padding: 10px 20px; color: white; border-radius: 5px; cursor: pointer">Submit</button>
+              <button type="submit" bg-primary>Submit</button>
             </form>
           </div>
         </div>
@@ -224,12 +224,11 @@
       <p class="mt-2">SMK Negeri 5 Malang - PPLG 2025</p>
     </footer>
     <!-- end footer -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbyC5w3qzqziL2vgS-nPUu6cQd_ov3-I92fW5pCUxb3Pe52d1UXbkJ-8UAXDGAJwM0U2/exec";
-      const form = document.forms[Contact"];
+      const form = document.forms["Contact"];
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
