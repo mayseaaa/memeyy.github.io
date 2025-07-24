@@ -190,21 +190,23 @@
         </div>
         <div class="row mb-3 justify-content-center">
           <div class="col-md-6">
-            <form>
+            <form name="submit-to-google-sheet">
               <div class="mb-3">
-                <label for="name" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+                <label for="Nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="Nama" aria-describedby="Nama" name="Nama" />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="Email" aria-describedby="Email" name="Email" />
               </div>
               <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <label for="Pesan" class="form-label">Pesan</label>
+                <input type="text" class="form-control" id="Pesan" aria-describedby="Pesan" name="Pesan" />
               </div>
-
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button class="btn btn-primary" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                <span role="status">Loading...</span>
+              </button>
             </form>
           </div>
         </div>
@@ -226,5 +228,17 @@
     </footer>
     <!-- end footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbzDInJfJv-NM26OkbqR7rDtAPjtbjn2rKWXswSolhPLcxfUylJCKWuN-Y5OyltRor5P/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
